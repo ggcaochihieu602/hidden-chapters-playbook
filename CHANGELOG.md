@@ -1,3 +1,7 @@
+# Ver 33 — 13/10/2026: bộ cài cho máy mới
+
+Thêm `SETUP_PROCESS.md` (hướng dẫn cho người dùng và Codex) và thư mục `setup/`: `setup.ps1` (tạo cấu trúc thư mục như máy gốc, chép file cần thiết, junction hoặc bảng đổi đường dẫn, cài skill, cấu hình Codex), `install_tools.ps1` (Git/Node/Python/FFmpeg, Claude Code, Codex CLI, DaVinci Resolve MCP, Frenemy, OmniVoice), `set_api_keys.ps1` (Pixabay/Pexels lưu DPAPI), `verify.ps1`. Thêm `scripts/search_pexels.ps1` và ghi chú Pexels trong MEDIA_SOURCES. Nội dung quy trình sản xuất không đổi.
+
 # Ver 33 — 12/10/2026: phát hành mới, gộp toàn bộ chỉnh sửa ver 32 r1–r10
 
 Nội dung giống ver 32 bản r10; tạo thành bản mới để Codex đọc từ đầu, không lẫn với các bản vá giữa chừng. Tóm tắt các quy tắc đã có trong bản này:

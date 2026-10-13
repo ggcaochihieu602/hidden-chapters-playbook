@@ -13,6 +13,8 @@ API chính thức: https://pixabay.com/api/docs/ ; endpoint video `https://pixab
 
 Dùng helper [search_pixabay.ps1](../scripts/search_pixabay.ps1) với Query và CacheDirectory tại workspace phim. Ví dụ: `powershell -File search_pixabay.ps1 -Query "remote island ocean" -CacheDirectory "<film-workspace>/sources/pixabay-cache"`. Helper trả JSON metadata, không tải footage tự động. Preview candidate rồi tải URL của rendition trong `hits[].videos` phù hợp, ưu tiên ngang và độ phân giải cao có sẵn; probe/decode và xem usable range trước import. Lưu provider, id, pageURL, contributor, query, tags, retrieval date, rendition/size/dimensions/duration, file/hash, license evidence, match_reason và source range. Ghi Pixabay khi hiển thị kết quả tìm.
 
+Pexels: key lưu DPAPI tại `%USERPROFILE%/.codex/secrets/pexels-api-key.dpapi` (tạo bằng `setup/set_api_keys.ps1`). Tìm video bằng [search_pexels.ps1](../scripts/search_pexels.ps1) `-Query "..." -Out "<film-workspace>/sources/pexels-search.json"`; trả JSON metadata (id, url, tác giả, link file ≥1920 px), không in key. Máy cũ chưa có file key này thì dùng cách đang chạy được.
+
 Cache kết quả ít nhất 24h; mặc định API 100 requests/60s, đọc rate-limit headers khi cần và dừng/backoff khi 429. Chỉ query theo nhu cầu phim và tải candidate đã chọn; không crawl hay systematic mass download. Tổng hợp đủ nguồn toàn phim vẫn áp dụng, nhưng không phải giấy phép tải hàng loạt toàn kho Pixabay. Giá GetHinh xu không áp cho API Pixabay; ghi chi phí thực tế, không bịa xu.
 
 Kiểm chứng 03/10/2026: một query ocean, per_page=3, trả 3 video và URL rendition. Chưa tải/decode footage, chưa tích hợp adapter MoneyPrinter2. Đây là nguồn và công cụ sourcing của playbook.

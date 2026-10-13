@@ -6,3 +6,4 @@ __pycache__/
 Thumbs.db
 desktop.ini
 tools/github_remote.txt
+verify-result.json

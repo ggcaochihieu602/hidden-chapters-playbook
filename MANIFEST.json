@@ -6,8 +6,13 @@
   "files": [
     {
       "path": "CHANGELOG.md",
-      "bytes": 26933,
-      "sha256": "f92c7be26ac37969432b74bba608afd6899a279c0c62ea615548a3b7922ebd94"
+      "bytes": 27543,
+      "sha256": "7331353337b9fd8d574a56b5f07bf5c7ee0004968253c2fca0749d8fd63cc069"
+    },
+    {
+      "path": "SETUP_PROCESS.md",
+      "bytes": 10686,
+      "sha256": "8c86af5092685f1cbebb7f39744e91edc2418586b497baec6e22a2456936919b"
     },
     {
       "path": "START_HERE.md",
@@ -96,8 +101,8 @@
     },
     {
       "path": "reference/MEDIA_SOURCES.md",
-      "bytes": 5941,
-      "sha256": "9081b31d9f27962635a2f0b14cf8273b0fe352aacc8c67fab1ff68154da17d3a"
+      "bytes": 6352,
+      "sha256": "671803a11a7606e981d0bfd50ddb9ee0ade6f5374245452d5e621add22c5758b"
     },
     {
       "path": "reference/MOTIF.md",
@@ -335,9 +340,79 @@
       "sha256": "4ab5e8c7ddd21e5a1b57a97275d8eb464fd895b20f4e2e5d68fe21560082459b"
     },
     {
+      "path": "scripts/search_pexels.ps1",
+      "bytes": 1304,
+      "sha256": "59a98c9bcc5fe90e6218d295188ee46662b63516634221a8a06c4cc8678e4097"
+    },
+    {
       "path": "scripts/search_pixabay.ps1",
       "bytes": 1674,
       "sha256": "6615ae31c8eb7351afafa5572b72e968dfe1246deded065699623cb07e239179"
+    },
+    {
+      "path": "setup/RUN_SETUP.bat",
+      "bytes": 329,
+      "sha256": "58786cc1870b1115101c3ced97b4da2e3f530a9891f779f55f471229c1cebf27"
+    },
+    {
+      "path": "setup/assets/hidden-chapters/AI_THUMBNAIL_PROMPT_RULES.md",
+      "bytes": 1868,
+      "sha256": "366cf4696939cc918b74a48c7fe645824cf0e4e660677d5258ca345b3a922f6e"
+    },
+    {
+      "path": "setup/assets/hidden-chapters/NEW_VIDEO_START.md",
+      "bytes": 539,
+      "sha256": "5bfc344b687035260725e88b548be037ce6458d77daa3d907545561bff75151e"
+    },
+    {
+      "path": "setup/assets/hidden-chapters/OUTPUT_RULES.md",
+      "bytes": 294,
+      "sha256": "042a6a0a7971b06105d7e386610061fc927b2d39aadcd0f9b1888c24af302be1"
+    },
+    {
+      "path": "setup/assets/moneyprinter2/AGENTS.md",
+      "bytes": 1663,
+      "sha256": "fcf70c090f85e3194b9dfdc502e80c4ff0c9af881b759f72b578bb01b52a1927"
+    },
+    {
+      "path": "setup/assets/moneyprinter2/SCRIPT_IDEAL_RULES.md",
+      "bytes": 1924,
+      "sha256": "08a6452a89167b8857242c8d2efcbd88104658f0221e369a575c8f1fbc56999d"
+    },
+    {
+      "path": "setup/assets/moneyprinter2/omni_voice_worker.py",
+      "bytes": 2057,
+      "sha256": "22626d858ce860a1b2e541ec356b08e77fd1c5b5d5e3b456f87e461fc77879ac"
+    },
+    {
+      "path": "setup/assets/voice/am_adam.wav",
+      "bytes": 266924,
+      "sha256": "8d31bdc487971cc8d36f6b18fec1963878bc3ce76901a4c284f3ada52e96fa25"
+    },
+    {
+      "path": "setup/install_tools.ps1",
+      "bytes": 5105,
+      "sha256": "90cb669f9ad44726df07d36cd9736b69f263281a26e880c79f2dc0c101afb95c"
+    },
+    {
+      "path": "setup/set_api_keys.bat",
+      "bytes": 95,
+      "sha256": "73b8f7377a55dd86117d21a1c4b27e3822659ca5147b156678ed56a7e924e6f3"
+    },
+    {
+      "path": "setup/set_api_keys.ps1",
+      "bytes": 936,
+      "sha256": "0a0e33b6b6bf17bb0a87af28cc8d0c23dd3b75df485d95aaa728469c2bdaafb2"
+    },
+    {
+      "path": "setup/setup.ps1",
+      "bytes": 9740,
+      "sha256": "09af4b9cd77f8b02389d96826a99d942ea4f17015ce1ff5e06de8a3f76727981"
+    },
+    {
+      "path": "setup/verify.ps1",
+      "bytes": 4138,
+      "sha256": "fddc323054234f0b6c99aeb092ac00608d09fd6f469290977240ac530409137d"
     },
     {
       "path": "skill/mp2-brief-edit/SKILL.md",
