@@ -1,0 +1,123 @@
+{
+  "schema": "hidden-chapters.progress.v3",
+  "project": null,
+  "playbook_version": "33",
+  "playbook_path": "E:\\Youtube AI\\Hidden Chapters\\Playbooks\\Playbook ver 33",
+  "profile": null,
+  "workspace": null,
+  "final_output_folder": null,
+  "current_stage": "00",
+  "stage_status": {
+    "00": "pending",
+    "01": "pending",
+    "02": "pending",
+    "03": "pending",
+    "04": "pending",
+    "05": "pending",
+    "06": "pending",
+    "07": "pending",
+    "08": "pending"
+  },
+  "gate_evidence": {},
+  "overrides": [],
+  "invalidated_gates": [],
+  "resolve_update_check": null,
+  "native_baseline": {
+    "project": null,
+    "timeline": null,
+    "snapshot": null,
+    "media_pool_ingest": {
+      "requested_files": null,
+      "verified_clips": null,
+      "image_type_readback": null,
+      "alias_canonical_manifest": null,
+      "quarantined_agent_sequences": [],
+      "scope": "readback is not a timeline, prep or rights pass"
+    }
+  },
+  "video_share": null,
+  "chapter_video_share": {},
+  "picture_gaps": [],
+  "black_border_findings": [],
+  "budget": {
+    "unit": "GetHinh xu",
+    "video": 100,
+    "ai_cloud": null
+  },
+  "review_scope": {
+    "input_media": null,
+    "native_samples": null,
+    "audio_listened_ranges": [],
+    "full_manual_review": false
+  },
+  "pending_deficits": [],
+  "blockers": [],
+  "next_action": null,
+  "delivery": {
+    "mode": "timeline_review",
+    "full_export_authorized": false,
+    "human_final_review": true,
+    "open_saved_timeline": true
+  },
+  "user_pause": {
+    "active": false,
+    "reason": null,
+    "checkpoint": null
+  },
+  "quota_stop": {
+    "window_hours": 5,
+    "remaining_percent_threshold": [
+      1,
+      2
+    ],
+    "last_checked_utc": null,
+    "remaining_percent": null,
+    "action": "save_and_stop_without_shutdown"
+  },
+  "record_storage": "film_workspace_only; never final_output_folder",
+  "output_folder_policy": "only assigned final deliverables; no technical records, drafts or old versions",
+  "native_photo_motion": {
+    "ledger": null,
+    "native_graph_readback": null,
+    "full_shot_continuity_evidence": null,
+    "subjective_full_shot_playback_status": "pending_when_stills_exist",
+    "sparse_frames_are_smoothness_proof": false,
+    "pre_capture_render_state_restored": null
+  },
+  "claude_collab": {
+    "protocol": "reference/CLAUDE_COLLAB.md",
+    "mcp_server": "claude",
+    "tool": "ask_claude",
+    "write_tool_in_production": false,
+    "folder": null,
+    "call_ledger": null,
+    "gate_status": {
+      "C0": "pending",
+      "C1": "pending",
+      "C2": "pending",
+      "C3": "pending",
+      "C4": "pending",
+      "C5": "pending",
+      "C6": "pending",
+      "C7": "pending"
+    },
+    "gate_status_values": [
+      "pending",
+      "pending_claude",
+      "claude_pass",
+      "claude_fail_fixed",
+      "disputed",
+      "codex_only",
+      "skipped_with_reason",
+      "blocked_claude_read"
+    ],
+    "mandatory_gates": [
+      "C1",
+      "C3",
+      "C6"
+    ],
+    "calls_used": 0,
+    "soft_call_budget": 20,
+    "last_error": null
+  }
+}

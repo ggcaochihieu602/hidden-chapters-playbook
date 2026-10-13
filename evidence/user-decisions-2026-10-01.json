@@ -1,0 +1,96 @@
+{
+  "source": "explicit user message in Tristan chat",
+  "implemented_in_playbook": "11",
+  "defaults": {
+    "schema": "hidden-chapters.defaults.v1",
+    "effective_date": "2026-10-01",
+    "authority": "explicit user instructions in Tristan chat",
+    "narration": {
+      "script_source": "provided in project chat",
+      "vo_source": "use selected supplied VO; generate only if needed",
+      "voice": "documentary-american-low",
+      "speed": 0.8,
+      "language": "en",
+      "generation": "one continuous master from full script"
+    },
+    "editor": {
+      "name": "DaVinci Resolve",
+      "bridge_expected": "already enabled; verify live",
+      "aspect_ratio": "16:9",
+      "fps": "read project/profile; do not infer"
+    },
+    "budget": {
+      "unit": "GetHinh xu",
+      "video": 100,
+      "audio_combined": 20,
+      "audio_roles": [
+        "music",
+        "sound_effect",
+        "ambience"
+      ],
+      "ai_cloud": null
+    },
+    "picture": {
+      "moving_video_share_min": 0.5,
+      "moving_video_share_max": 0.7,
+      "share_scope": "whole film",
+      "chapter_all_stills_allowed": false,
+      "video_shot_seconds": [
+        2,
+        10
+      ],
+      "still_max_seconds": 8,
+      "anchor": "measured clause onset",
+      "motion": [
+        "pan-left",
+        "pan-right",
+        "zoom-in",
+        "zoom-out"
+      ],
+      "cover_before_motion": true
+    },
+    "audio": {
+      "continuous_audible_music": true,
+      "continuous_suitable_ambience": true,
+      "files_and_cues_per_chapter": true,
+      "composition_count_limit": null,
+      "action_sfx": "intro only",
+      "text_whoosh": false,
+      "local_sound_track_name": "Local sound effect",
+      "preserve_download_zip_and_all_variants": true
+    },
+    "chapter_pause": {
+      "seconds": [
+        3,
+        5
+      ],
+      "vo": false,
+      "picture": true,
+      "music": true,
+      "rebase_timestamps_after_insertion": true
+    },
+    "delivery": {
+      "mode": "timeline_review",
+      "full_export_authorized": false,
+      "human_final_review": true,
+      "open_saved_timeline": true
+    },
+    "precedence": "latest user instruction > existing project-specific override > defaults > historical evidence"
+  },
+  "attached_example": "E:\\Youtube AI\\Hidden Chapters\\STOCK FOOTAGE & MUSIC KEYWORDS.txt",
+  "decisions": [
+    "clause semantics with previous/next context",
+    "exact place then compatible action/context",
+    "video share whole film; no chapter entirely stills",
+    "semantic photo selection followed by AI prep",
+    "cover before varied pan/zoom",
+    "music continuous including 3-5s no-VO chapter pause",
+    "chapter/story audio files and cues; no composition count limit within budget",
+    "preserve original audio zip and extracted variants",
+    "chapter/location priority, center text candidate native test",
+    "input QC before assembly; small bridge test; timeline handoff, no full export"
+  ],
+  "film_mutations_performed": false,
+  "native_template_test": "blocked: connection refused",
+  "baseline_text_frames": "existing native export frame extraction"
+}

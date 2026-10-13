@@ -1,0 +1,47 @@
+{
+  "schema": "hidden-chapters.delivery.v2",
+  "mode": "timeline_review",
+  "project": null,
+  "timeline_name": null,
+  "timeline_id": null,
+  "saved": false,
+  "opened_for_user": false,
+  "duration_seconds": null,
+  "full_export_authorized": false,
+  "full_export_performed": false,
+  "user_review": "pending",
+  "checkpoint": null,
+  "final_output_folder": null,
+  "deliverables": [],
+  "qc_evidence": [],
+  "limitations": [],
+  "resolution": {
+    "expected_width": 3840,
+    "expected_height": 2160,
+    "timeline_width": null,
+    "timeline_height": null,
+    "output_width": null,
+    "output_height": null,
+    "native_verified": false
+  },
+  "intro": {
+    "actual_seconds": null,
+    "vo_present": null,
+    "all_video_verified": false,
+    "chapter_caption_offsets_verified": false
+  },
+  "audio_provider": "Epidemic Sound",
+  "record_storage": "film_workspace_only; never final_output_folder",
+  "output_folder_policy": "only assigned final deliverables; no technical records, drafts or old versions",
+  "chapter_title_verification": {
+    "first_vo_onset_and_footage_verified": false,
+    "no_pre_roll_verified": false,
+    "evidence": null
+  },
+  "still_motion_verification": {
+    "native_editable_keyframes_verified": false,
+    "continuous_playback_reviewed": false,
+    "consecutive_frame_evidence": null,
+    "reviewed_scope": null
+  }
+}

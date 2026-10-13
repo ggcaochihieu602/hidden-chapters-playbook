@@ -1,0 +1,83 @@
+{
+  "status": "ready_for_timeline_review",
+  "checked_at": "2026-10-01T21:21:10.057336+00:00",
+  "picture_gaps": [],
+  "offline_files": [],
+  "native_binding_and_source_ranges_match": true,
+  "true_video_percent": 69.57631338700307,
+  "chapter_video_percent": [
+    {
+      "chapter": 1,
+      "title": "1. The Last Stretch of Water",
+      "true_video_percent": 82.66502159161011
+    },
+    {
+      "chapter": 2,
+      "title": "2. A Harbor Smaller Than the Journey",
+      "true_video_percent": 68.34324280893459
+    },
+    {
+      "chapter": 3,
+      "title": "3. The Walls Around Dinner",
+      "true_video_percent": 84.51083109160413
+    },
+    {
+      "chapter": 4,
+      "title": "4. What the Ocean Pays For",
+      "true_video_percent": 65.25198938992042
+    },
+    {
+      "chapter": 5,
+      "title": "5. The Mountain Wakes",
+      "true_video_percent": 38.51638092004753
+    },
+    {
+      "chapter": 6,
+      "title": "6. The Journey They Chose",
+      "true_video_percent": 67.70766670933061
+    },
+    {
+      "chapter": 7,
+      "title": "7. After the Homecoming",
+      "true_video_percent": 75.53001783237566
+    },
+    {
+      "chapter": 8,
+      "title": "8. The Work Still Ahead",
+      "true_video_percent": 86.59029649595688
+    },
+    {
+      "chapter": 9,
+      "title": "9. The Other Side of the Water",
+      "true_video_percent": 61.03202846975089
+    }
+  ],
+  "shots": 289,
+  "text_cards": 29,
+  "native_proofs": [
+    "native-location-in.png",
+    "native-location-hold.png",
+    "native-location-out.png",
+    "native-chapter.png",
+    "native-date.png",
+    "native-restored-village.png"
+  ],
+  "prepared_source_frames_checked": 867,
+  "black_border_candidates": [],
+  "audio_qc": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\tristan-da-cunha-production-v01\\rebuild-v28\\planning\\audio-qc.json",
+  "native_mix_sample": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\tristan-da-cunha-production-v01\\rebuild-v28\\qc\\native-mix-sample.json",
+  "view_scope": "All prepared ranges: first/middle/last. Native frames: title in/hold/out, chapter, date, restored village. Whole native interval/source readback. Native 12 s mix sample signal checked. No full human watch/listen.",
+  "exceptions": [
+    {
+      "orders": [
+        2,
+        3,
+        21,
+        22
+      ],
+      "reason": "Retain truthful exact settlement/school imagery; compatible moving stock cannot identify named Tristan landmarks. No false stock landmark substituted. Record as editorial exception, not all-video-intro pass."
+    }
+  ],
+  "full_export_authorized": false,
+  "user_review": "pending"
+}

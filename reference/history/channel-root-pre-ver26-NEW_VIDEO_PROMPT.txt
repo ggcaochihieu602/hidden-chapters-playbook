@@ -1,0 +1,33 @@
+Hãy dựng một video documentary MỚI cho kênh Hidden Chapters, thực hiện đến timeline DaVinci Resolve đã lưu và mở sẵn cho tôi xem/góp ý. Tôi tự export; không tự xuất toàn phim khi chưa được yêu cầu.
+
+PHIM NÀY
+- Tên/chủ đề: [điền]
+- Script và/hoặc VO đã chọn: [file đính kèm hoặc đường dẫn]; giữ nguyên bản đã duyệt.
+- Yêu cầu khác/override: [điền nếu có].
+
+MẶC ĐỊNH nếu tôi không yêu cầu thay đổi: American low, speed0.8, English; nếu tôi đã gửi VO chọn rồi thì dùng đúng file đó. Ngân sách100 xu video,20 xu CHUNG music/SFX/ambience. Cloud/API khác không tự coi nằm trong trần này. Resolve timeline và bridge được bật sẵn; kiểm đọc thật trước dùng.
+
+ĐỌC VÀ THỰC HIỆN
+1. Đọc E:\Youtube AI\Hidden Chapters\Playbooks\LATEST.json, rồi START_HERE.md của bản được trỏ tới. Dùng mp2-brief-edit nếu có; khi làm trong MoneyPrinter2 đọc AGENTS.md. Không đoán ver mới theo mtime.
+2. Ba lớp: START_HERE ngắn → hồ sơ project/progress → chỉ hướng dẫn bước hiện tại. Chỉ mở reference/hình/fix liên quan; không nạp cả history. Tự làm checklist và lưu evidence/next_action; không hỏi duyệt sau mỗi bước.
+3. Tạo workspace riêng trong E:\Youtube AI\MoneyPrinter2\artifacts; template profile của playbook ghi script/VO hashes, preset/override, native timeline/fps/origin, budget, clauses và pause map, keyword, music/ambience instruction, source/cost/audio ledgers, text samples và pending deficits. “Tiếp tục” thì resume checkpoint, không làm lại.
+4. Tạo VO master liền mạch từ script dài nếu cần; không tạo từng câu rồi nối. Align câu/vế bằng VO thực. Hình neo đầu mỗi vế theo ý + câu trước/sau. Nghỉ chuyển chương3–5s chỉ ngừng VO, hình và music tiếp tục; map offsets cho hình/text/SRT.
+5. Tạo STOCK FOOTAGE & MUSIC KEYWORDS.txt và bảng music/ambience riêng từ nội dung từng chương trước khi tìm mở rộng. Exact-place/entity trước, rồi tháp keyword/chuỗi và cảnh hành động/bối cảnh tương thích khi khó; tránh dấu hiệu trái địa điểm/thời kỳ/khí hậu, giữ provenance thật. Đọc ví dụ mẫu để học cấu trúc, không copy địa danh phim mẫu.
+6. Tìm/tải/kiểm đủ hình và audio TOÀN PHIM trước dựng hàng loạt. Pexels; Envato/Vecteezy đưa itemURL vào GetHinh đã đăng nhập, nguồn1xu khi item đúng giá; Google tìm trang gốc ảnh. Ảnh khó tìm AI minh họa, ảnh đúng nghĩa nhưng mờ/thiếu ratio AI upscale/outpaint giữ gốc. Không dựng-tìm-dựng từng clip; deficits sau dựng gom bổ sung một đợt.
+7. Video50–70% thời lượng hình toàn phim, không chương toàn ảnh; video2–10s, ảnh≤8s. Pan/zoom MP4 vẫn tính ảnh. Kiểm semantic/source ranges, EOF và ratio/black borders trước import. Scale/crop cover trước motion, đa dạng pan trái/phải zoomin/out, không lộ đen trong mọi frame.
+8. Kiểm E:\Youtube AI\Hidden Chapters\Music\catalog.csv/README trước search audio mới; nhạc cũ phù hợp kết hợp nhạc mới. Giữ ZIPgốc+full extracted folder tất cả loop/full/short/WAV/MP3/license. Source cue/file music và ambience riêng theo từng chương/chuyển biến, nhiều nếu cần, không giới hạn số lượng trong budget. Nhạc nghe được toàn duration, overlap quiet intro/outro và loop musical sustain; ambience theo nội dung. ActionSFXintro; text không whoosh. Tách audio clip video vào track Local sound effect đúng sync.
+9. Trước mỗi phiên MCP kiểm GitHub update (https://github.com/samuelgursky/davinci-resolve-mcp), đọc changes rồi xác nhận project/bridge. Thử timestamp/source-in trên đoạn nhỏ của build thật. Snapshot trước batch, dựng hàng loạt, native readback sau batch. Không auto-upgrade live app/server hoặc xuất full để test.
+10. Mở ảnh text mẫu của playbook; chapter/location ưu tiên, box chapter dịu, mọi text animation. Center location/fact/date từ native template đã thử; candidate chưa proof không coi default. Giữ native editable title hoặc source của alpha fallback.
+11. Kiểm kết quả: toàn timeline không gap/offline, mỗi hình/video không viền đen do format/crop/motion hoặc viền có sẵn. Đối chiếu clause bindings/audio coverage/native samples vùng rủi ro. Không bắt full render/full manual watch trước bàn giao; báo đúng phạm vi đã xem/nghe. Save/mở sẵn timeline cho tôi, báo đường hồ sơ và giới hạn còn thiếu.
+
+THƯ MỤC
+- Gốc E:\Youtube AI\Hidden Chapters.
+- Playbooks\LATEST.json chọn bản mới nhất; không hardcode ver.
+- Music: shared audio copies/catalog/Archives.
+- Brand ở gốc: logo.png, logo overlay.png,4k Icon.png,Thumb Sample1.jpg–Thumb Sample3.jpg.
+- Thành phẩm: một folder YYYY-M-D-Ten-Phim, giữ tên folder cũ. Chứa MP4cuối KHI tôi tự xuất/hoặc yêu cầu xuất, thumbnail+prompt,SRT timeline cuối (không offset01:00:00:00),description/credits khi được giao. Footage/VO/project/cache/bản dựng/backup giữ workspace, không move.
+- Công cụ E:\Youtube AI\MoneyPrinter2; MCP E:\Youtube AI\MoneyPrinter2\research\davinci-resolve-mcp.
+
+Nếu môi trường ChatGPT không có filesystem/MCP trên máy này, đường E không tự cấp quyền đọc/điều khiển. Báo rõ và dùng ZIP playbook mới nhất + script/tài liệu đính kèm; không nói đã đọc/chỉnh Resolve khi chưa truy cập được. ZIP có instructions/hình mẫu, không có footage/kho nhạc/runtime. Tiếp tục phần có thể làm. Không tự publish hoặc gửi chat khác nếu tôi chưa yêu cầu.
+
+Bắt đầu từ LATEST, scope và bước đang làm; chỉ báo ngắn đầu vào thật sự thiếu.

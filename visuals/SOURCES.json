@@ -1,0 +1,97 @@
+[
+  {
+    "path": "visuals/brand/logo.png",
+    "original_path": "E:\\Youtube AI\\Hidden Chapters\\logo.png",
+    "sha256": "845a0eab028ae45960c8362cf5fca40be3a4a95edc208dd911e1916c2a7b4234",
+    "role": "channel_asset_copy",
+    "approved_scope": "user supplied channel logo/thumbnail reference; preserve originals"
+  },
+  {
+    "path": "visuals/brand/logo overlay.png",
+    "original_path": "E:\\Youtube AI\\Hidden Chapters\\logo overlay.png",
+    "sha256": "c077c1b17524f6ae5716f2b974b50269f4bd1f8cf7ed6d082f5952ad8bc8aae0",
+    "role": "channel_asset_copy",
+    "approved_scope": "user supplied channel logo/thumbnail reference; preserve originals"
+  },
+  {
+    "path": "visuals/brand/4k Icon.png",
+    "original_path": "E:\\Youtube AI\\Hidden Chapters\\4k Icon.png",
+    "sha256": "66aa2f129ed464fd05d36d5c8168cba3c0c3cdea6dbc2820de6b6a6eb5468f97",
+    "role": "channel_asset_copy",
+    "approved_scope": "user supplied channel logo/thumbnail reference; preserve originals"
+  },
+  {
+    "path": "visuals/brand/Thumb Sample1.jpg",
+    "original_path": "E:\\Youtube AI\\Hidden Chapters\\Thumb Sample1.jpg",
+    "sha256": "b14a7b1895085efa644dbc2703d254780f5d8a76d841b869e2e7cb9962ea342f",
+    "role": "channel_asset_copy",
+    "approved_scope": "user supplied channel logo/thumbnail reference; preserve originals"
+  },
+  {
+    "path": "visuals/brand/Thumb Sample2.jpg",
+    "original_path": "E:\\Youtube AI\\Hidden Chapters\\Thumb Sample2.jpg",
+    "sha256": "37c269f220abcde023d8736302008075a8d0601f0ded897d6cb6a5f7d47f8417",
+    "role": "channel_asset_copy",
+    "approved_scope": "user supplied channel logo/thumbnail reference; preserve originals"
+  },
+  {
+    "path": "visuals/brand/Thumb Sample3.jpg",
+    "original_path": "E:\\Youtube AI\\Hidden Chapters\\Thumb Sample3.jpg",
+    "sha256": "bc9dab285996bbaebb1c319fa294ec1e6ccf16c790d3d256eb124ca494170c89",
+    "role": "channel_asset_copy",
+    "approved_scope": "user supplied channel logo/thumbnail reference; preserve originals"
+  },
+  {
+    "path": "visuals/overlays/tristan-chapter-proxy.png",
+    "original_path": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\tristan-da-cunha-production-v01\\qc\\v16-title-composite-samples\\T02-proxy-composite.png",
+    "sha256": "5c72e395748927c31b7f64c1d06d33c334cdbf8a7f8acccca738c8fc9de69e07",
+    "role": "proxy_composite",
+    "limit": "layout reference only; actual Resolve composite pending in source checkpoint"
+  },
+  {
+    "path": "visuals/overlays/longyearbyen-location-100s.png",
+    "original_path": "E:\\Youtube AI\\Hidden Chapters\\2026-8-28-Longyearbyen\\Longyearbyen.mp4",
+    "timestamp_seconds": 100,
+    "sha256": "e1f82075528952e65c0f70894694915af7c6d823374e52f1235b22bd367812c8",
+    "role": "decoded_final_export_frame",
+    "method": "ffmpeg single frame, scaled to 1280px width",
+    "review": "visually inspected: white lower-left text, correct box padding, no stroke; not full-film approval"
+  },
+  {
+    "path": "visuals/overlays/longyearbyen-fact-638s.png",
+    "original_path": "E:\\Youtube AI\\Hidden Chapters\\2026-8-28-Longyearbyen\\Longyearbyen.mp4",
+    "timestamp_seconds": 638,
+    "sha256": "1d56b0b7187a9f611a477ebc2bee41ece2b631eaa6b7ebba3e80e70e48031198",
+    "role": "decoded_final_export_frame",
+    "method": "ffmpeg single frame, scaled to 1280px width",
+    "review": "visually inspected: white lower-left text, correct box padding, no stroke; not full-film approval"
+  },
+  {
+    "path": "visuals/documentary-graphics/user-example-1.png",
+    "original_path": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\la-rinconada-production-v01\\sources\\documentary-style-references\\user-example-1.png",
+    "sha256": "9c0058a22e675bb2aeeb2728a02c2b71b4bb2080c6ed860a2d831b45a8015a8e",
+    "role": "user_rejected_sparse_diagram",
+    "approved_scope": "Style/content hierarchy reference only; no permission or factual validation for copying locations, images, numbers or statistics into another film."
+  },
+  {
+    "path": "visuals/documentary-graphics/user-example-2.png",
+    "original_path": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\la-rinconada-production-v01\\sources\\documentary-style-references\\user-example-2.png",
+    "sha256": "2fd23182b64fd6d1a2dbc18984b918c3c56ca613950d08671219ecb3397a57fc",
+    "role": "user_selected_documentary_infographic_style_reference",
+    "approved_scope": "Style/content hierarchy reference only; no permission or factual validation for copying locations, images, numbers or statistics into another film."
+  },
+  {
+    "path": "visuals/documentary-graphics/user-example-3.png",
+    "original_path": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\la-rinconada-production-v01\\sources\\documentary-style-references\\user-example-3.png",
+    "sha256": "f6550ac3f2f8e827821439153dfd4c5aae15081dfcf00c13b9d84b7454504e31",
+    "role": "user_selected_documentary_infographic_style_reference",
+    "approved_scope": "Style/content hierarchy reference only; no permission or factual validation for copying locations, images, numbers or statistics into another film."
+  },
+  {
+    "path": "visuals/documentary-graphics/user-example-4.png",
+    "original_path": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\la-rinconada-production-v01\\sources\\documentary-style-references\\user-example-4.png",
+    "sha256": "ec22951c5ee244955157bb1459966274163ad9355f54d9dde4654f9711364af8",
+    "role": "user_selected_documentary_infographic_style_reference",
+    "approved_scope": "Style/content hierarchy reference only; no permission or factual validation for copying locations, images, numbers or statistics into another film."
+  }
+]

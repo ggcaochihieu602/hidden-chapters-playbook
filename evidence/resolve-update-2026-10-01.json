@@ -1,0 +1,10 @@
+{
+  "checked_on": "2026-10-01",
+  "method": "resolve_control mcp_update_status force_check=true",
+  "installed": "4.8.22",
+  "latest": "4.8.26",
+  "status": "update_available",
+  "release_url": "https://github.com/samuelgursky/davinci-resolve-mcp/releases/tag/v4.8.26",
+  "applied": false,
+  "notes": "Release removes dead layout helpers; no tool/action changes. Bridge test connection refused; no project edits."
+}

@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-28T10:45:07.176497+00:00",
+  "repo": "E:\\Youtube AI\\MoneyPrinter2\\research\\davinci-resolve-mcp",
+  "status": "up_to_date",
+  "installs_updates": false,
+  "local_commit": "89da04b19b0dbcbf6e5a53a54fe80542a8d2ef23",
+  "local_changes": false,
+  "local_version": "4.8.22",
+  "latest_version": "4.8.22",
+  "release_url": "https://github.com/samuelgursky/davinci-resolve-mcp/releases/tag/v4.8.22",
+  "release_published_at": "2026-09-26T14:43:42Z",
+  "release_notes": "## v4.8.22\n\nThe control panel port check cannot hang on a wedged `lsof`.\n\n### Fixed\n\n- **`open_control_panel` could block forever behind an unkillable `lsof`.** The port-owner check ran `lsof -iTCP:<port> -sTCP:LISTEN -t` through `subprocess.run(timeout=3)`. On macOS, lsof wedges in uninterruptible kernel wait (state `U` in `ps`) when a network mount is stale, and a process in that state ignores SIGKILL. `subprocess.run`'s timeout path kills the child and then waits for it, so the 3-second timeout never returned and the caller hung with the child. Measured on 2026-09-26 on the release machine, where 489 lsof processes had been stuck for 12 hours and the offline suite sat in this function for 13 minutes. `_port_owner_pid` now starts lsof in its own session, polls to the deadline, and on expiry sends SIGKILL and abandons the child instead of joining it. stdout is read only once `poll()` reports an exit, and the pipe is closed on every path. A missing lsof is still `None`, not an exception.\n\n### Tests\n\n- `tests/test_port_owner_pid.py`: a fake child whose `poll()` never returns and whose `kill()` is a no-op yields `None` within the deadline with `wait()` and `communicate()` never called and the pipe closed; an exited child still yields its PID; a missing binary yields `None`; and a real subprocess that ignores SIGTERM, with `kill` patched out, is left running rather than joined.\n\n### Validation\n\n- Static checks and drift guards: parity, api-limitations, readwrite-symmetry, agent-rules, release-surface, panel-docs, tool counts, package-lock sync — all clean.\n- Full offline suite: 3932 tests OK, 2 skipped (v4.8.21 baseline 3927 plus the five new tests), in 150 s with the real wedged lsof on PATH.\n- Measured against the fault itself, not a simulation: the release machine still had 482 lsof processes in state `U`. The previous implementation (v4.8.21) called against that lsof did not return within its 3 s timeout and was still hung when a 25 s alarm killed the interpreter. The new implementation returned `None` in 3.02 s against the same lsof, and the full suite above ran with the real lsof on PATH, no stub.\n- No Resolve behavior changed; live Resolve test not required.\n",
+  "remote_head": "89da04b19b0dbcbf6e5a53a54fe80542a8d2ef23",
+  "head_matches": true,
+  "guidance": "Review release notes/current README before any update; no update is performed by this script."
+}

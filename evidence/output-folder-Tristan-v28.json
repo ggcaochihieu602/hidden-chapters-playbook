@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-02",
+  "project": "Tristan da Cunha",
+  "cause": "Delivery metadata left final_output_folder null while only timeline/workspace was handed off; export restriction was handled without product-folder preparation.",
+  "fix": "Created 2026-10-2-Tristan-da-Cunha with 431-cue SRT, 9 chapter timestamps, locked script and summary/manifest; updated profile/progress. No media/project moves, no full export.",
+  "verification": "Caption text equals selected script tokens; measured frame bounds monotonic and within48196; files/profile folder read back; thumbnail/prompt not produced explicitly recorded.",
+  "status": "corrected_folder_and_records; thumbnail/prompt pending; MP4 awaiting user self-export"
+}

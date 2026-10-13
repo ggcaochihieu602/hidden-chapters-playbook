@@ -1,0 +1,93 @@
+Hãy sản xuất một video documentary MỚI cho kênh Hidden Chapters, sử dụng quy trình và kinh nghiệm đã lưu từ các phim trước. Thực hiện công việc, không chỉ đưa kế hoạch.
+
+THÔNG TIN VIDEO — tôi sẽ điền hoặc đính kèm
+- Chủ đề / địa điểm / tên phim: [ĐIỀN]
+- Brief, script hoặc tài liệu tham khảo: [ĐƯỜNG DẪN / FILE ĐÍNH KÈM / CHƯA CÓ]
+- Trạng thái script: [CHƯA CÓ / BẢN NHÁP CẦN HOÀN THIỆN / ĐÃ DUYỆT, GIỮ NGUYÊN]
+- Thời lượng mục tiêu: [ĐIỀN; để trống thì dự kiến khoảng 30 phút]
+- Ngôn ngữ lời dẫn: [ĐIỀN; để trống thì tiếng Anh]
+- VO: [FILE CÓ SẴN / TẠO MỚI VỚI PRESET …]
+- Reporter AI: [KHÔNG / PHƯƠNG ÁN DỰ PHÒNG / CÓ YÊU CẦU CỤ THỂ]
+- Ngân sách: video stock [ … xu ]; music [ … xu ]; SFX [ … xu ]; AI/API [ … đơn vị ]. Chưa điền thì chưa cho phép phát sinh chi phí mới.
+- Phạm vi: sản xuất đầy đủ, gồm script nếu chưa có, VO, nguồn hình/âm thanh, dựng Resolve, QC, video cuối, thumbnail + prompt và caption SRT. [SỬA DÒNG NÀY NẾU CHỈ MUỐN LẬP KẾ HOẠCH HOẶC GIAO PROJECT]
+- Yêu cầu khác: [ĐIỀN NẾU CÓ]
+
+1. XÁC ĐỊNH TÀI LIỆU HIỆN HÀNH
+
+Nếu có filesystem/tools trên máy này, bắt đầu từ:
+E:\Youtube AI\Hidden Chapters\Playbooks\LATEST.json
+
+Đọc đường dẫn entry/path trong LATEST.json rồi mở START_HERE.md của phiên bản đó. Không hard-code ver 3: nếu đã có bản mới hơn, dùng bản mới nhất được LATEST chỉ tới. Nếu cần, đối chiếu LATEST.md và VERSIONS.json, không đoán bản mới nhất theo thời gian sửa file.
+
+Dùng skill mp2-brief-edit nếu có. Khi làm trong MoneyPrinter2, đọc E:\Youtube AI\MoneyPrinter2\AGENTS.md. Ưu tiên chỉ đạo mới trong chat này, tiếp theo yêu cầu project, playbook hiện hành, cuối cùng mới là lịch sử.
+
+Không giả định đã nhớ chat cũ. Tài liệu và hồ sơ trên đĩa là nguồn kế thừa. Không lấy ngân sách, timecode, asset ID, tên nơi hoặc giọng narrator của phim trước làm yêu cầu của phim mới.
+
+Nếu môi trường không truy cập được ổ E, hãy nói rõ ngay. Đường dẫn này không tự cấp quyền đọc máy tính. Yêu cầu tôi đính kèm ZIP playbook mới nhất, brief/script và các tài nguyên thực sự cần cho bước hiện tại; dùng đường tương đối trong ZIP. Không nói đã đọc thư mục hoặc điều khiển Resolve khi chưa có công cụ. Tiếp tục phần có thể làm từ tài liệu đã nhận.
+
+2. BẢN ĐỒ THƯ MỤC CẦN DÙNG
+
+- Quy tắc quản lý đầu ra: E:\Youtube AI\Hidden Chapters\OUTPUT_RULES.md
+- Kho playbook và các bản cũ: E:\Youtube AI\Hidden Chapters\Playbooks
+- Kho âm thanh dùng chung: E:\Youtube AI\Hidden Chapters\Music
+  Đọc README.md và catalog.csv trước; mở catalog.json/Records để tra nguồn, quyền dùng và phiên bản. Projects chứa danh sách theo phim, MISSING_SOURCES.json ghi file chưa tìm được.
+- Tài nguyên kênh tại E:\Youtube AI\Hidden Chapters:
+  logo.png
+  logo overlay.png
+  4k Icon.png
+  Thumb Sample1.jpg
+  Thumb Sample2.jpg
+  Thumb Sample3.jpg
+- Trong thư mục playbook được LATEST chọn:
+  stages: các bước thực hiện;
+  reference/ERROR_INDEX.md: tra lỗi theo bước;
+  reference/MOTIF.md: phong cách kể chuyện khi phù hợp chủ đề;
+  reference/SOURCING.md: tháp keyword và tìm theo chuỗi;
+  reference/AI_REPORTER.md: AI ảnh, phục chế và reporter;
+  reference/RESOLVE_MCP.md: cài/kết nối/khôi phục Resolve;
+  reference/AUDIO_LIBRARY.md: tái sử dụng âm thanh;
+  visuals/INDEX.md và ảnh kèm: đối chiếu text, bố cục, thumbnail/logo;
+  templates: tiến độ, checklist, scene/asset/cost/audio/delivery records;
+  reference/history: bằng chứng và kinh nghiệm cũ, chỉ tra khi liên quan.
+- Công cụ làm việc hiện có: E:\Youtube AI\MoneyPrinter2
+- Resolve MCP hiện có: E:\Youtube AI\MoneyPrinter2\research\davinci-resolve-mcp
+- Upstream: https://github.com/samuelgursky/davinci-resolve-mcp
+
+Các phim trước là tham khảo, không phải project để ghi đè. Không di chuyển hoặc sửa nguồn/project của phim tàu, Longyearbyen hay Tristan để tạo phim này.
+
+3. THỰC HIỆN TỪNG BƯỚC, GIỮ CONTEXT GỌN
+
+Đọc START_HERE → hồ sơ progress của project → chỉ file bước đang làm. Không nạp toàn bộ playbook/history cùng lúc. Mỗi bước đọc đúng quy tắc nhỏ, cách sửa lỗi và ảnh tham chiếu mà bước đó liên kết. Tự lập checklist, thực hiện, kiểm bằng chứng, lưu tiến độ rồi mới sang bước tiếp theo.
+
+Các bước: brief/script/VO → tìm đủ nguồn toàn phim → chuẩn bị media → kiểm cập nhật và kết nối Resolve → dựng hình hàng loạt → âm thanh → text/đồ họa → QC/xuất/bàn giao. Trước mỗi phiên sử dụng Resolve MCP, kiểm cập nhật GitHub theo bước 04 và xác minh đúng project/timeline/bridge. Kiểm cập nhật không đồng nghĩa tự nâng phần mềm đang dựng.
+
+Checklist là tự kiểm công việc, không phải yêu cầu tôi xác nhận sau mỗi bước. Chủ động tiến hành trong phạm vi đã giao. Chỉ hỏi thông tin còn thiếu thực sự ảnh hưởng đến quyết định, quyền truy cập hoặc chi phí; tiếp tục phần độc lập trong lúc chờ. Không coi thiếu ngân sách là được dùng ngân sách của phim cũ. Nếu script đã duyệt, giữ nguyên lời và không xin duyệt lại.
+
+Tạo workspace riêng cho phim mới trong E:\Youtube AI\MoneyPrinter2\artifacts, dùng tên dễ nhận biết và tránh trùng project hiện có. Ghi progress.json, playbook version/path, script/VO hash, scene bindings, source/cost/audio ledgers, native snapshot, việc đã kiểm và bước tiếp theo. Khi tôi nói “tiếp tục”, đọc checkpoint và tiếp tục phần chưa xong, không làm lại toàn bộ.
+
+4. CÁC YÊU CẦU SẢN XUẤT PHẢI GIỮ
+
+- Tìm, tải và kiểm đủ footage/ảnh cho TOÀN BỘ phim trước khi dựng hàng loạt; tìm nhiều lựa chọn phù hợp trong ngân sách. Sau dựng nếu phát hiện thiếu/sai, bổ sung có mục tiêu cho đúng beat.
+- Video chiếm 50–70% thời lượng hình toàn phim; intro toàn video. Mỗi cảnh video 2–10 giây, ảnh tối đa 8 giây. Ảnh pan/zoom xuất MP4 vẫn tính ảnh. Kiểm tỷ lệ toàn phim và từng chương/khoảng thời gian để không bỏ sót vùng trống.
+- Hình bám câu/cụm ý VO, tìm theo tháp keyword và chuỗi hành động. Có thể dùng context thay thế hợp lý, nhưng không gán sai nơi/sự kiện. Không lặp nguồn phần chính; ngoại lệ teaser intro theo playbook.
+- Ảnh thấp chất lượng: tìm original tốt hơn, hoặc AI tăng nét trước timeline và đối chiếu bản gốc. AI minh họa khi nguồn quá khó tìm phải có ghi nhận; không giả tư liệu lịch sử.
+- KIỂM KHO MUSIC TRƯỚC khi search music/SFX/ambience mới. Chọn lại nguồn phù hợp rồi bổ sung nhạc mới để đủ mood và tránh lặp. Không coi WAV/MP3/short/full của cùng bài là bài khác. Ghi usage và thêm nguồn mới đã kiểm vào kho bằng bản sao; giữ original và provenance.
+- Tìm nhiều lựa chọn background music; action SFX tập trung ở intro; ambience phù hợp xuyên phim. Đo/nghe đúng đoạn đã cắt cùng VO, giữ lời rõ và fade hợp lý.
+- Dựng trên DaVinci Resolve, giữ các lớp dễ chỉnh. Snapshot trước batch; kiểm clip/source-in/duration và readback sau khi lưu. Không gọi API trả thành công là đã nghiệm thu hình/âm.
+- Mở ảnh mẫu trong visuals để đối chiếu text thật. Text trong phim và style thumbnail khác nhau. Kiểm native viewer/short render; contact sheet không thay cho xem/nghe cả phim.
+- Kiểm file thật sau tải, ghi nguồn/quyền dùng/chi phí. Không mua lại chỉ vì browser timeout, không báo hoàn tất từ link tải hoặc thumbnail.
+
+5. XUẤT VÀ BÀN GIAO
+
+Tạo một folder thành phẩm E:\Youtube AI\Hidden Chapters\YYYY-M-D-Ten-Phim. Nếu project đã có folder, dùng lại đúng tên/ngày. Giao:
+- <Slug>.mp4 — video cuối đã xuất và kiểm;
+- <Slug>-thumbnail-vN.png hoặc .jpg;
+- <Slug>-thumbnail-vN-prompt.txt;
+- <Slug>-EN.srt hoặc mã ngôn ngữ thực — caption căn theo video cuối, bắt đầu ở thời gian file xuất, không mang offset 01:00:00:00 của timeline Resolve;
+- description/chapter timestamps/credits nếu tôi yêu cầu hoặc brief chỉ định.
+
+Footage, VO nguồn, cache, proxy, project Resolve, các bản dựng và backup ở workspace, không đưa vào folder thành phẩm. Music là kho bản sao dùng chung theo quy tắc riêng. Không tự upload/publish YouTube.
+
+Khi bàn giao, gửi đường dẫn file thật, kết quả QC, chi phí và phần chưa đạt. Phân biệt đã dựng, đã kiểm native, đã xuất mẫu, đã xuất full, đã xem và đã nghe. Ghi thêm bài học có bằng chứng vào đúng bước/hồ sơ để phim tiếp theo tiếp tục kế thừa.
+
+Bắt đầu bằng việc xác nhận các đường dẫn truy cập được, xác định playbook mới nhất và thực hiện bước 01. Chỉ tóm tắt ngắn những đầu vào còn thiếu, không đọc lại toàn bộ quy trình cho tôi.

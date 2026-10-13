@@ -1,0 +1,85 @@
+V005 — STOCK FOOTAGE + MUSIC KEYWORDS — R05
+Impossible Railways: How Trains Keep Working Where Railways Should Fail
+
+Nguyên tắc: tên địa điểm/thực thể chính xác trước, sau đó mới tới từ khóa cơ chế/đặc điểm. Không nhét camera-angle (wide shot/drone/close up) trừ khi thật sự cần cho tìm nguồn.
+
+== CHƯƠNG 1 — PILATUS RAILWAY (Thụy Sĩ) ==
+Pilatus railway Switzerland
+Pilatus cogwheel train Lucerne
+Mount Pilatus mountain railway
+Alpnachstad railway station Switzerland
+Locher rack railway mechanism
+Stadler new train Pilatus 2023
+steep mountain railway gears
+
+== CHƯƠNG 2 — MAEKLONG RAILWAY MARKET (Thái Lan) ==
+Maeklong railway market Thailand
+Talat Rom Hup umbrella market
+Samut Songkhram train market
+State Railway of Thailand Ban Laem Mae Klong
+railway market vendors folding stalls
+train passing through market Thailand
+
+== CHƯƠNG 3 — LANDWASSER VIADUCT / BERNINA RAILWAY (Thụy Sĩ) ==
+Landwasser Viaduct Filisur Switzerland
+Rhaetian Railway Graubünden
+Bernina railway Switzerland Italy
+Albula railway Switzerland
+Swiss mountain railway viaduct tunnel
+UNESCO World Heritage Switzerland railway
+
+== CHƯƠNG 4 — QINGHAI–TIBET RAILWAY (Trung Quốc) ==
+Qinghai Tibet railway China
+Tanggula Pass railway station
+Golmud Lhasa train
+Tibetan plateau train permafrost
+high altitude railway China
+train crossing Tibetan plateau
+
+== CHƯƠNG 5 — MAURITANIA IRON ORE RAILWAY (Mauritania) ==
+Mauritania iron ore train
+SNIM railway Zouerat Nouadhibou
+longest train in the world Africa
+iron ore train Sahara desert
+Mauritania train tunnel abandoned
+desert freight train Africa
+
+== CHƯƠNG 6 — FORTH BRIDGE (Scotland, Vương quốc Anh) ==
+Forth Bridge Scotland
+Firth of Forth rail bridge
+Forth Bridge cantilever steel
+Forth Bridge painting maintenance
+Forth Bridge UNESCO World Heritage
+Edinburgh railway Scotland aerial
+
+== ĐỒ HOẠ / DIAGRAM (không phải stock, ghi chú cho dựng hoạt hình) ==
+rack railway gear diagram animation
+permafrost cooling system diagram
+cantilever bridge structure diagram
+single track railway passing loop diagram
+
+---
+
+NHẠC NỀN — TỪ KHÓA TÌM KIẾM (backup/candidate, không phải quyết định khóa — xem Director Script Master mục 5 cho status blocker)
+
+Nhịp Mở Đầu / Đoạn Kết (chậm, suy ngẫm, piano):
+documentary cinematic piano instrumental
+soft ambient piano reflective
+
+Nhịp Nhóm 1 — cơ khí/núi cao chính xác (đều, có cấu trúc, không kịch tính giả tạo):
+precision mechanical ambient instrumental
+mountain engineering cinematic underscore
+
+Nhịp Nhóm 2 — con người/nhịp sống (ấm, nhẹ, có nhịp điệu con người):
+warm ambient documentary human rhythm
+gentle world instrumental market
+
+Nhịp Nhóm 3 — quy mô công nghiệp/khắc nghiệt (rộng, kéo dài, ít giai điệu):
+vast landscape ambient drone instrumental
+industrial cinematic atmosphere instrumental
+
+Nhịp Nhóm 4 — lịch sử/trường tồn (trang trọng, chậm, có chiều sâu):
+historic cinematic strings instrumental
+dignified documentary orchestral ambient
+
+Ưu tiên track instrumental, không lời, để không cạnh tranh với giọng đọc.

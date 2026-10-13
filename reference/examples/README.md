@@ -1,0 +1,1 @@
+File STOCK FOOTAGE & MUSIC KEYWORDS.txt do người dùng đính kèm ngày 01/10/2026. Nội dung Impossible Railways chỉ là ví dụ cách tổ chức. Không copy entity/chapter/mood sang phim khác. Quy tắc của chat hiện hành là yêu cầu; file tham khảo không tự đổi scope, ngân sách hay giọng.

@@ -1,0 +1,118 @@
+{
+  "schema": "hidden-chapters.project.v1",
+  "project": null,
+  "workspace": null,
+  "final_output_folder": null,
+  "playbook_version": "33",
+  "playbook_path": "E:\\Youtube AI\\Hidden Chapters\\Playbooks\\Playbook ver 33",
+  "defaults_reference": "templates/PROJECT_DEFAULTS.json",
+  "script": {
+    "path": null,
+    "sha256": null,
+    "locked": false
+  },
+  "vo": {
+    "path": null,
+    "sha256": null,
+    "voice": "documentary-american-low",
+    "speed": 0.8,
+    "language": "en",
+    "duration_seconds": null
+  },
+  "resolve": {
+    "project_name": null,
+    "timeline_name": null,
+    "timeline_id": null,
+    "fps": null,
+    "origin_frame": null,
+    "bridge_expected_enabled": true,
+    "timeline_width": 3840,
+    "timeline_height": 2160,
+    "output_width": 3840,
+    "output_height": 2160
+  },
+  "budget": {
+    "unit": "GetHinh xu",
+    "video": 100,
+    "ai_cloud": null
+  },
+  "records": {
+    "clauses": null,
+    "words": null,
+    "chapters_and_pauses": null,
+    "keyword_file": null,
+    "scene_ledger": null,
+    "audio_instruction": null,
+    "audio_cues": null,
+    "asset_ledger": null,
+    "cost_ledger": null,
+    "text_samples": null,
+    "native_checkpoint": null,
+    "intro_and_pause_map": null,
+    "sample_review": null,
+    "claude_calls": null,
+    "collab_folder": null
+  },
+  "delivery": {
+    "mode": "timeline_review",
+    "full_export_authorized": false,
+    "human_final_review": true,
+    "open_saved_timeline": true
+  },
+  "overrides": [],
+  "pending_deficits": [],
+  "audio_source_policy": "Epidemic Sound only; latest explicit user override may change this",
+  "user_pause": {
+    "active": false,
+    "reason": null,
+    "checkpoint": null
+  },
+  "quota_stop": {
+    "window_hours": 5,
+    "remaining_percent_threshold": [
+      1,
+      2
+    ],
+    "last_checked_utc": null,
+    "remaining_percent": null,
+    "action": "save_and_stop_without_shutdown"
+  },
+  "record_storage": "film_workspace_only; never final_output_folder",
+  "output_folder_policy": "only assigned final deliverables; no technical records, drafts or old versions",
+  "claude_collab": {
+    "protocol": "reference/CLAUDE_COLLAB.md",
+    "mcp_server": "claude",
+    "tool": "ask_claude",
+    "write_tool_in_production": false,
+    "folder": null,
+    "call_ledger": null,
+    "gate_status": {
+      "C0": "pending",
+      "C1": "pending",
+      "C2": "pending",
+      "C3": "pending",
+      "C4": "pending",
+      "C5": "pending",
+      "C6": "pending",
+      "C7": "pending"
+    },
+    "gate_status_values": [
+      "pending",
+      "pending_claude",
+      "claude_pass",
+      "claude_fail_fixed",
+      "disputed",
+      "codex_only",
+      "skipped_with_reason",
+      "blocked_claude_read"
+    ],
+    "mandatory_gates": [
+      "C1",
+      "C3",
+      "C6"
+    ],
+    "calls_used": 0,
+    "soft_call_budget": 20,
+    "last_error": null
+  }
+}

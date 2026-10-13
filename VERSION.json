@@ -1,0 +1,21 @@
+{
+  "version": "33",
+  "date": "2026-10-12",
+  "title": "Hidden Chapters Playbook",
+  "entry": "START_HERE.md",
+  "progressive_reading": true,
+  "layers": [
+    "orchestrator",
+    "stage execution",
+    "per-film profile"
+  ],
+  "current_editor": "DaVinci Resolve",
+  "delivery_default": "timeline_review",
+  "source_path": "E:\\Youtube AI\\MoneyPrinter2\\docs\\hidden-chapters-playbook-v33",
+  "published_path": "E:\\Youtube AI\\Hidden Chapters\\Playbooks\\Playbook ver 33",
+  "collaboration": "Codex orchestrates; Claude via Frenemy MCP ask_claude at gates C0-C7 (reference/CLAUDE_COLLAB.md)",
+  "image_policy": "ratio-first: AI may regenerate images to 16:9 with changed details; enhance only low-quality images; no 4K requirement",
+  "audio_policy": "track order A1 VO, A2-A3 music, A4 ambience, A5 SFX, A6+ Local sound effect (footage audio, audible, under VO)",
+  "resolve_policy": "connect Resolve only from stage 04 after 03 passes",
+  "based_on": "Playbook ver 32 (r1-r10)"
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.zip
+.env
+*.log
+Thumbs.db
+desktop.ini
+tools/github_remote.txt

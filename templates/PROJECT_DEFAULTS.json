@@ -1,0 +1,227 @@
+{
+  "schema": "hidden-chapters.defaults.v1",
+  "effective_date": "2026-10-06",
+  "authority": "explicit user instructions, generalized for shared playbook, 03/10/2026",
+  "narration": {
+    "script_source": "provided in project chat",
+    "vo_source": "use selected supplied VO; generate only if needed",
+    "voice": "documentary-american-low",
+    "speed": 0.8,
+    "language": "en",
+    "generation": "one continuous master from full script"
+  },
+  "editor": {
+    "name": "DaVinci Resolve",
+    "bridge_expected": "needed only from stage 04 (after 03 passes); verify live then",
+    "aspect_ratio": "16:9",
+    "fps": "read project/profile; do not infer",
+    "timeline_width": 3840,
+    "timeline_height": 2160,
+    "output_width": 3840,
+    "output_height": 2160,
+    "resolve_connect_from_stage": "04; stages 00-03 never require Resolve/MCP; exception: existing timeline or timeline-only task"
+  },
+  "budget": {
+    "unit": "GetHinh xu",
+    "video": 100,
+    "ai_cloud": null
+  },
+  "picture": {
+    "moving_video_share_min": null,
+    "moving_video_share_max": null,
+    "share_scope": "video first according to each clause; still only when matching video unavailable",
+    "chapter_all_stills_allowed": "only when matching video unavailable and documented",
+    "video_shot_seconds": [
+      2,
+      10
+    ],
+    "still_max_seconds": 8,
+    "anchor": "measured clause onset",
+    "motion": [
+      "pan-left",
+      "pan-right",
+      "zoom-in",
+      "zoom-out"
+    ],
+    "cover_before_motion": true,
+    "graphics": "essential mechanisms/numeric explanation only",
+    "ai_image_prep": "ver 32: off-ratio images -> AI expand or regenerate to 16:9 (detail changes allowed, no factual match required); low-quality images only -> AI enhance (4K not required, tool default size OK); 16:9 and sharp images used directly; mark ai_regenerated in internal ledger only; never any on-screen AI label/caption/watermark; exact text via native overlay; images only need to be reasonably plausible: ignore minor defects (fake text, symbols, clothing prints, small background details); regenerate at most once and only for major defects",
+    "motion_engine": "DaVinci Resolve editable Inspector/Fusion Zoom/Position keyframes on prepared static images (usable originals or AI 16:9 versions)",
+    "external_baked_photo_motion": false,
+    "motion_verification": "continuous native full-shot playback and consecutive-frame inspection; sparse frames insufficient",
+    "native_fusion_recipe": "stages/05_ASSEMBLY.md#motion-ảnh-bằng-fusion-native--quy-trình-tái-sử-dụng",
+    "native_fusion_graph": "static Photo → PhotoMotion Transform → MediaOut",
+    "native_keyframe_domain": "measured clip-local 0..duration_frames-1",
+    "carrier_and_active_photo_paths_separate": true,
+    "prevent_stacked_photo_motion": true,
+    "all_images_ai_processing_required": true,
+    "baked_in_black_bars": "detect letterbox/pillarbox inside 16:9 files at 02/03 (frames or ffmpeg cropdetect); zoom = max(W/w,H/h)*1.02; apply Inspector Zoom on timeline at 05, reposition to keep subject; no stretch, no source re-render"
+  },
+  "audio": {
+    "continuous_audible_music": true,
+    "continuous_suitable_ambience": true,
+    "files_and_cues_per_chapter": true,
+    "composition_count_limit": null,
+    "action_sfx": "intro only",
+    "text_whoosh": false,
+    "local_sound_track_name": "Local sound effect",
+    "preserve_download_zip_and_all_variants": true,
+    "provider": "Epidemic Sound",
+    "local_source_audio_enabled": true,
+    "acquisition": "select_and_download_new_for_each_video",
+    "storage": "film_workspace",
+    "local_sound_level": "audible, under VO: peaks ~-24..-18 dBFS under VO, ~-18..-12 dBFS in intro/chapter pauses (under music); short fades at cuts; disable spans with speech/music/bad noise; approximate",
+    "account_rights_check": false,
+    "account_note": "user is signed in to their own personal account; do not check plan/subscription/linked channel/safelist/license; if it downloads, use it"
+  },
+  "chapter_pause": {
+    "seconds": [
+      3,
+      5
+    ],
+    "vo": false,
+    "picture": true,
+    "music": true,
+    "rebase_timestamps_after_insertion": true
+  },
+  "delivery": {
+    "mode": "timeline_review",
+    "full_export_authorized": false,
+    "human_final_review": true,
+    "open_saved_timeline": true,
+    "records_location": "film_workspace",
+    "final_output_folder_policy": "only assigned final deliverables; no technical records, drafts or old versions",
+    "retain_all_thumbnail_versions_in_output": false
+  },
+  "precedence": "latest user instruction > existing project-specific override > defaults > historical evidence",
+  "media_sources": {
+    "footage_addition": "Pixabay API alongside existing sources",
+    "policy": "reference/MEDIA_SOURCES.md",
+    "footage_providers": [
+      "Pexels API",
+      "Pixabay API",
+      "GetHinh Envato Elements",
+      "GetHinh Vecteezy",
+      "verified original photo/document source"
+    ],
+    "audio_policy": "Epidemic Sound only; no silent provider fallback",
+    "audio_provider": "Epidemic Sound",
+    "sourcing_order": [
+      "matching video",
+      "matching original photo via Google Images/original publisher",
+      "justified expansion or documented non-locating clause"
+    ],
+    "browser_sessions": {
+      "browser": "Codex in-app browser",
+      "providers": [
+        "GetHinh",
+        "Epidemic Sound"
+      ],
+      "state": "user_confirmed_already_signed_in",
+      "action": "open_or_reuse_tabs_and_use_existing_session_without_reconfirmation",
+      "blocker": "report_only_after_observed_access_login_or_download_rights_failure"
+    }
+  },
+  "intro": {
+    "seconds": [
+      10,
+      20
+    ],
+    "vo": false,
+    "picture": "all video, highlights selected from film content",
+    "body_footage_reuse": "authorized teaser exception",
+    "music": "Epidemic; cultural/context fit selected per film"
+  },
+  "quota_stop": {
+    "window_hours": 5,
+    "remaining_percent": [
+      1,
+      2
+    ],
+    "action": "save native/checkpoint/progress and stop",
+    "shutdown": false
+  },
+  "chapter_title": {
+    "anchor": "measured first VO onset of own chapter after intro/pause offsets",
+    "background": "footage bound to that first VO sentence",
+    "entrance_pre_roll": false
+  },
+  "claude_collab": {
+    "orchestrator": "Codex",
+    "reviewer_planner": "Claude Code via Frenemy MCP 'claude' (ask_claude, read-only)",
+    "gates": {
+      "C0": "connection/read check (00)",
+      "C1": "clause split, mandatory (01)",
+      "C2": "visual brief, keywords, music table (02)",
+      "C3": "source review per clause, mandatory (02-03)",
+      "C4": "AI still check, major defects only: 16:9, no borders/stretch, on-topic, main subject not clearly deformed (03); minor flaws noted, not fixed",
+      "C5": "intro plan, cue map and chapter-title onset review (05)",
+      "C6": "final QC, mandatory (08)",
+      "C7": "title/description/chapter timestamps (08, when assigned)"
+    },
+    "single_writer": "Codex writes all files and progress; Claude returns content only",
+    "cross_check": "Codex runs scripts/check_claude_handoff.py and re-opens evidence before acting; Claude reviews Codex output for meaning/rules",
+    "anti_hallucination": [
+      "canary quote per call",
+      "evidence path per pass/fail",
+      "no unsourced facts",
+      "one rebuttal round max",
+      "script computes all frames/timecodes"
+    ],
+    "soft_call_budget_per_film": 20,
+    "on_claude_unavailable": "mark gate pending_claude, continue independent work, never record as passed"
+  },
+  "text_style": {
+    "spec": "reference/TEXT_STYLE_V32.md",
+    "samples": "visuals/text-example-v32 (source E:\\Youtube AI\\Hidden Chapters\\Text example)",
+    "styles": [
+      "Chapter",
+      "Location",
+      "Annotation"
+    ],
+    "templates": [
+      "HC_Chapter_v32",
+      "HC_Location_v32",
+      "HC_Annotation_v32"
+    ],
+    "animation": "native in/out in DaVinci Resolve per spec; no whoosh; no other styles"
+  },
+  "ai_image_prompt_prefix": {
+    "file": "templates/AI_IMAGE_PROMPT_PREFIX.txt",
+    "text": [
+      "Sony A7R IV, 35mm f/1.8, environmental portrait",
+      "Leica Summilux close-up, natural soft diffusion",
+      "IMG_9854.CR2, RAW.16bit.ACEScg"
+    ],
+    "applies_to": "only fully new AI images (complete regeneration, start/end images for AI video); NOT expand-only or enhance-only edits of an original; not video prompts",
+    "position": "start of prompt, verbatim, then line break"
+  },
+  "audio_track_layout": [
+    {
+      "track": "A1",
+      "name": "VO"
+    },
+    {
+      "track": "A2",
+      "name": "Music 1"
+    },
+    {
+      "track": "A3",
+      "name": "Music 2"
+    },
+    {
+      "track": "A4",
+      "name": "Ambience"
+    },
+    {
+      "track": "A5",
+      "name": "SFX",
+      "content": "added Epidemic SFX"
+    },
+    {
+      "track": "A6+",
+      "name": "Local sound effect",
+      "content": "audio detached from original footage; audible, volume adjusted under VO"
+    }
+  ]
+}

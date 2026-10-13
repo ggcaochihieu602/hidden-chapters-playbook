@@ -1,0 +1,29 @@
+{
+  "range_frames": [
+    3032,
+    3392
+  ],
+  "render_seconds": 12.010666666666667,
+  "status": {
+    "CompletionPercentage": 100,
+    "JobStatus": "Complete",
+    "TimeTakenToRenderInMs": 2749
+  },
+  "peak_dbfs": -8.51465984701797,
+  "rms_by_second_dbfs": [
+    -24.57733917236328,
+    -26.223861694335938,
+    -24.972148895263672,
+    -32.09358215332031,
+    -34.314598083496094,
+    -36.762062072753906,
+    -33.11817169189453,
+    -25.127887725830078,
+    -25.67323875427246,
+    -31.147890090942383,
+    -24.79037094116211,
+    -27.37265396118164
+  ],
+  "purpose": "Native engine mix transition sample only; no full-film render",
+  "human_listening": false
+}

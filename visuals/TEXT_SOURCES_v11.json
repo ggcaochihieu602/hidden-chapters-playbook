@@ -1,0 +1,26 @@
+[
+  {
+    "path": "overlays/tristan-v27-chapter.jpg",
+    "source": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\tristan-da-cunha-production-v01\\music-ace-v27\\render\\Tristan-v27-continuous-ACE-music-review.mp4",
+    "elapsed_seconds": 31.5,
+    "method": "FFmpeg frame extraction from existing native Resolve export; no new full export",
+    "sha256": "8672b3af1e2db0fe94e2da0caf9e8540fc94de2096e44534ee446a2ca1327289",
+    "status": "default reference: existing user-liked chapter/location form; not approval of whole film"
+  },
+  {
+    "path": "overlays/tristan-v27-location.jpg",
+    "source": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\tristan-da-cunha-production-v01\\music-ace-v27\\render\\Tristan-v27-continuous-ACE-music-review.mp4",
+    "elapsed_seconds": 13.0,
+    "method": "FFmpeg frame extraction from existing native Resolve export; no new full export",
+    "sha256": "b57daf25df1dc26dc46dc11062aabafa4da4f60b6c62fc8695dd207553f9c9af",
+    "status": "default reference: existing user-liked chapter/location form; not approval of whole film"
+  },
+  {
+    "path": "overlays/tristan-v27-fact.jpg",
+    "source": "E:\\Youtube AI\\MoneyPrinter2\\artifacts\\tristan-da-cunha-production-v01\\music-ace-v27\\render\\Tristan-v27-continuous-ACE-music-review.mp4",
+    "elapsed_seconds": 111.5,
+    "method": "FFmpeg frame extraction from existing native Resolve export; no new full export",
+    "sha256": "62133aed9188cdd6b23e57e14362b8d47cc30ffec6fdff0e90055ae60ef75968",
+    "status": "default reference: existing user-liked chapter/location form; not approval of whole film"
+  }
+]

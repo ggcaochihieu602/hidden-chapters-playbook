@@ -1,0 +1,1 @@
+call_id,gate,stage,started_utc,prompt_file,answer_file,packet_dir,batch_scope,canary_expected,canary_ok,claude_verdict,codex_check,items_fail,items_uncertain,items_rejected_by_codex,accepted_file,dispute,status,notes

@@ -1,0 +1,11 @@
+{
+  "scope": "Actual PCM sum of separate final cue files, including overlapping heads/tails and loops. Native 12 s sample separately verified; whole-film native render/listen not performed. VO nearest-neighbour resampling only for conservative provisional peak estimate.",
+  "music_quiet_one_second_windows": [],
+  "ambience_quiet_one_second_windows": [],
+  "music_min_one_second_dbfs": -43.727092703713744,
+  "ambience_min_one_second_dbfs": -58.64467994757503,
+  "music_peak_dbfs": -14.386248061253525,
+  "ambience_peak_dbfs": -11.925805947771128,
+  "provisional_combined_peak_dbfs": -6.204090726368595,
+  "window_count": 1607
+}

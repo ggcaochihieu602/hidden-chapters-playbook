@@ -1,0 +1,1 @@
+clause_id,chapter,sentence_id,verbatim,previous_context,next_context,meaning,entity,action,place,time_era,visual_role,vo_start_seconds,vo_end_seconds,timeline_start_frame,timeline_end_frame,timing_method,timing_confidence,pause_offset_seconds,source_id,replacement_level,match_reason,status
